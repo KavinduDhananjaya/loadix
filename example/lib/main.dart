@@ -48,7 +48,11 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             ElevatedButton(
               onPressed: () {
-                Loadix.show(context);
+                Loadix.show(
+                  context,
+                  // color: Colors.blue,
+                  // loaderType: LoaderTypes.dotsTriangle
+                );
                 Future.delayed((Duration(seconds: 4)), () {
                   Loadix.hide();
                 });
@@ -61,15 +65,15 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               onPressed: () {
                 setState(() {
-                  showLoading =!showLoading;
+                  showLoading = !showLoading;
                 });
               },
-              child: Text("${showLoading?"Hide":"Show"} Loading Widget"),
+              child: Text("${showLoading ? "Hide" : "Show"} Loading Widget"),
             ),
             SizedBox(
               height: 30,
             ),
-            if(showLoading)Loadix.loadingWidget,
+            if (showLoading) Loadix.loadingWidget,
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.

@@ -1,39 +1,79 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Loadix
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Loadix is a simple, customizable loading overlay widget for Flutter applications. It provides an easy way to display a loading indicator over your app's UI during asynchronous operations.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Easy to use static methods to show and hide the loading overlay
+- Customizable loading widget
+- Prevents multiple overlays from being shown simultaneously
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add this to your package's `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  loadix: ^1.0.0
+```
+
+
+---
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+Import the package in your Dart file:
+```
+import 'package:loadix/loadix.dart';
 ```
 
-## Additional information
+---
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+
+### Show Loading Overlay
+
+Call `Loadix.show` with the current `BuildContext` to display the loading overlay:
+
+
+
+### Hide Loading Overlay
+
+Call `Loadix.hide()` to remove the loading overlay:
+
+
+
+
+---
+
+## Example
+
+Here’s a complete example demonstrating how to use **loadix** in a Flutter app:
+
+
+```
+            ElevatedButton(
+              onPressed: () {
+                Loadix.show(context);
+                Future.delayed((Duration(seconds: 4)), () {
+                  Loadix.hide();
+                });
+              },
+              child: Text("Show Loading Overlay"),
+            );
+```
+
+
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## License
+
+MIT License © [Kavindu Dhannjaya]
+
+---
+
+Happy coding! 🚀

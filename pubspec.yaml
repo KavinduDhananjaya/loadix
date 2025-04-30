@@ -1,7 +1,7 @@
 name: loadix
 description: "A simple and customizable Flutter loading widget"
-version: 0.0.1
-homepage:
+version: 1.0.0
+homepage: https://github.com/KavinduDhananjaya/loadix.git
 
 environment:
   sdk: ^3.6.2

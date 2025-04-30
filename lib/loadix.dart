@@ -124,10 +124,12 @@ class Loadix {
 
   static void init({
     Color? color,
-    LoaderTypes? type,
+    LoaderTypes? loaderType,
+    double? loaderSize,
   }) {
     _loaderColor = color ?? Colors.green;
-    _type = type ?? LoaderTypes.staggeredDotsWave;
+    _type = loaderType ?? LoaderTypes.staggeredDotsWave;
+    _loaderSize = loaderSize?? 30.0;
   }
 
   static void hide() {

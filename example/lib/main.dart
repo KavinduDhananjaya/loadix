@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Loadix',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlueAccent),
         useMaterial3: true,
       ),
       home: const MyHomePage(),
@@ -48,11 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             ElevatedButton(
               onPressed: () {
-                Loadix.show(
-                  context,
-                  // color: Colors.blue,
-                  // loaderType: LoaderTypes.dotsTriangle
-                );
+                Loadix.show(context);
                 Future.delayed((Duration(seconds: 4)), () {
                   Loadix.hide();
                 });
@@ -76,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
             if (showLoading) Loadix.loadingWidget,
           ],
         ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }

@@ -14,7 +14,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  loadix: ^1.0.1
+  loadix: ^1.0.2
 ```
 
 

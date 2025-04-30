@@ -129,7 +129,7 @@ class Loadix {
   }) {
     _loaderColor = color ?? Colors.green;
     _type = loaderType ?? LoaderTypes.staggeredDotsWave;
-    _loaderSize = loaderSize?? 30.0;
+    _loaderSize = loaderSize ?? 30.0;
   }
 
   static void hide() {

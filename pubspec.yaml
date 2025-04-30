@@ -1,6 +1,6 @@
 name: loadix
-description: "A simple and customizable Flutter loading widget"
-version: 1.0.0
+description: "Loadix is a customizable Flutter loading overlay package that provides easy-to-use, animated loading indicators. Perfect for displaying loading states during async operations in mobile and web apps."
+version: 1.0.1
 homepage: https://github.com/KavinduDhananjaya/loadix.git
 
 environment:

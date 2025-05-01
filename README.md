@@ -26,7 +26,6 @@ Import the package in your Dart file:
 import 'package:loadix/loadix.dart';
 ```
 
-
 ### Setting Default Styles
 You can set default styles for your entire app:
 ```
@@ -100,6 +99,10 @@ ElevatedButton(
     child: Text("Show Loading Overlay"),
 );
 ```
+
+## Preview
+https://github.com/user-attachments/assets/ff197516-e1ea-487a-b88d-df754615825f
+
 
 ## Available Loader Types
 

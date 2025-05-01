@@ -14,9 +14,8 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  loadix: ^1.0.1
+  loadix: ^1.0.3
 ```
-
 
 ---
 
@@ -57,6 +56,18 @@ Loadix.show(
   color: Colors.red,
   animationType: LoadingAnimationType.inkDrop,
   size: 50.0,
+);
+
+```
+
+To show Loading Overlay with automatic hide after a duration:
+
+```
+Loadix.showInTime(
+  context,
+  duration: Duration(seconds: 2),
+  color: Colors.black45,
+  loaderType: LoaderTypes.horizontalRotatingDots,
 );
 
 ```

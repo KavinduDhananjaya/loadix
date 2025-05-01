@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("Loadix"),
+        title: Text("Loadix Example"),
       ),
       body: Center(
         child: Column(
@@ -54,6 +54,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 });
               },
               child: Text("Show Loading Overlay"),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Loadix.showInTime(
+                  context,
+                  duration: Duration(seconds: 2),
+                  color: Colors.black45,
+                  loaderType: LoaderTypes.horizontalRotatingDots,
+                );
+              },
+              child: Text("Show In Time"),
             ),
             SizedBox(
               height: 20,

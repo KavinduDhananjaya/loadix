@@ -1,6 +1,6 @@
 name: loadix
 description: "Loadix: A Flutter package for customizable, animated loading overlays."
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/KavinduDhananjaya/loadix.git
 
 environment:

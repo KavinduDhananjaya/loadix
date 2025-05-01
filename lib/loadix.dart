@@ -137,6 +137,25 @@ class Loadix {
     _overlayEntry = null;
   }
 
+  static void showInTime(
+    BuildContext context, {
+    Color? color,
+    LoaderTypes? loaderType,
+    double? loaderSize,
+    required Duration duration,
+  }) {
+    show(
+      context,
+      color: color,
+      loaderType: loaderType,
+      loaderSize: loaderSize,
+    );
+
+    Future.delayed(duration, () {
+      hide();
+    });
+  }
+
   static final loadingWidget = Center(
     child: getLoaderByType(
       LoaderTypes.staggeredDotsWave,
